@@ -17,7 +17,7 @@ const Sidenav = () => {
       : "text-[#6c6b75]";
 
   return (
-    <aside className=" w-[18%] px-3 py-4 wrap-break-word border border-[#dadedf] bg-white">
+    <aside className=" w-[18%] px-3 py-4 wrap-break-word border border-[#dadedf] bg-white fixed h-screen">
       <Typography className="font-bold py-2 px-2">Nova</Typography>
       <nav className="flex flex-col gap-2 mt-4 border-y border-[#dadedf] py-4">
         <div className="flex items-center gap-2 border border-[#dadedf] bg-[#f4f5f7] rounded-md p-2 my-2">
