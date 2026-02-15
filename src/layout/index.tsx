@@ -7,7 +7,7 @@ const Layout = () => {
       <Sidenav />
       <div className="flex-1 flex flex-col w-[85%] ml-[18%]">
         <Navbar />
-        <main className="px-8 py-4 mt-20">
+        <main className="py-4 mt-20">
           <div id="single-spa-application:@NovaOrg/nova-mfe-dashboard"></div>
         </main>
       </div>
