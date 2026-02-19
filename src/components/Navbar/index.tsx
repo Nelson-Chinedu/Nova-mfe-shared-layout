@@ -4,7 +4,7 @@ import { Input, Button } from "@NovaOrg/nova-mfe-shared-ui";
 
 const Navbar = () => {
   return (
-    <div className="bg-white border-b border-[#dadedf] py-4 px-8 fixed w-[82%]">
+    <div className="bg-white border-b border-[#dadedf] py-4 px-8 fixed w-[82%] z-50">
       <div className="flex items-center justify-between">
         <div className="w-[40%]">
           <Input
