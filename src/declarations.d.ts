@@ -38,36 +38,36 @@ declare module "*.svg" {
   export default src;
 }
 
-declare module "@NovaOrg/nova-mfe-shared-ui" {
-  import React, { ButtonHTMLAttributes, ComponentPropsWithoutRef, FC, HTMLAttributes, ReactNode } from "react";
+// declare module "@NovaOrg/nova-mfe-shared-ui" {
+//   import React, { ButtonHTMLAttributes, ComponentPropsWithoutRef, FC, HTMLAttributes, ReactNode } from "react";
 
-  // Define the types for your shared components
-  export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-    children: ReactNode;
-    className?: string;
-    variant?: "primary" | "secondary" | "outline" | "danger";
-    size?: "sm" | "md" | "lg";
-  }
-  export const Button: React.FC<ButtonProps>;
+//   // Define the types for your shared components
+//   export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
+//     children: ReactNode;
+//     className?: string;
+//     variant?: "primary" | "secondary" | "outline" | "danger";
+//     size?: "sm" | "md" | "lg";
+//   }
+//   export const Button: React.FC<ButtonProps>;
 
-  export interface TypographyProps extends HTMLAttributes<HTMLElement> {
-    children: ReactNode;
-    className?: string;
-    variant?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span";
-  }
+//   export interface TypographyProps extends HTMLAttributes<HTMLElement> {
+//     children: ReactNode;
+//     className?: string;
+//     variant?: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span";
+//   }
 
-  export const Typography: FC<TypographyProps>;
+//   export const Typography: FC<TypographyProps>;
 
-  export type InputProps = ComponentPropsWithoutRef<"input"> & {
-    label?: string;
-    startIcon?: ReactNode;
-    endIcon?: ReactNode;
-    containerClassName?: string;
-  };
+//   export type InputProps = ComponentPropsWithoutRef<"input"> & {
+//     label?: string;
+//     startIcon?: ReactNode;
+//     endIcon?: ReactNode;
+//     containerClassName?: string;
+//   };
 
-  export const Input: React.FC<InputProps>;
+//   export const Input: React.FC<InputProps>;
 
-  export function publicApiFunction(): void;
+//   export function publicApiFunction(): void;
 
-  // Add other components here as you create them
-}
+//   // Add other components here as you create them
+// }

@@ -2,7 +2,7 @@ import { ComponentType } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { ChevronsUpDown } from "lucide-react";
 
-import { Typography } from "@NovaOrg/nova-mfe-shared-ui";
+import { Typography } from "~/components";
 
 import { main_menus } from "../../constants/main_menus";
 

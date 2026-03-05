@@ -1,13 +1,17 @@
 import { Bell, Command, Search, Share2 } from "lucide-react";
+import { useForm } from "react-hook-form";
 
-import { Input, Button } from "@NovaOrg/nova-mfe-shared-ui";
+import { Input, Button } from "~/components";
 
 const Navbar = () => {
+  const form = useForm();
+
   return (
     <div className="bg-white border-b border-[#dadedf] py-4 px-8 fixed w-[82%] z-50">
       <div className="flex items-center justify-between">
         <div className="w-[40%]">
           <Input
+            control={form.control}
             startIcon={<Search size={15} />}
             endIcon={
               <Button variant="outline" size="sm" className="bg-[#f2f5f8] border border-[#dadedf] text-[#8b8b99]">
@@ -17,6 +21,7 @@ const Navbar = () => {
             }
             className="border border-[#dadedf] rounded-md w-full"
             placeholder="Search keyword..."
+            name="search"
           />
         </div>
         <div className="flex items-center gap-2">
